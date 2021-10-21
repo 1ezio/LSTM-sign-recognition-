@@ -72,7 +72,7 @@ def extract_keypoints(results):
     rh = np.array([[res.x, res.y, res.z] for res in results.right_hand_landmarks.landmark]).flatten() if results.right_hand_landmarks else np.zeros(21*3)
     return np.concatenate([pose, face, lh, rh])
 data_path = os.path.join("C:/Users/Soumya/Desktop/sem 7/LSTM-sign-recognition-/saumya choudhary/")##GIVE PATH TO SAVE
-actions= np.array(['To_Save', "Savings"])##GIVE UR LABELS 
+actions= np.array(['Write'])##GIVE UR LABELS 
 no_sequences =30 #30 Videos for each actions
 sequence_length = 30 ##30 Frames
 
